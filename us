@@ -1,0 +1,4 @@
+echo "zeus"
+title="${PWD##*/} zeus $1 $2 $3 $4 $5"
+echo -n -e "\033]0;$title\007"
+zeus  $1 $2 $3 $4 $5
