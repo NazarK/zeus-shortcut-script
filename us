@@ -1,4 +1,9 @@
 echo "zeus"
+if [ "$1" == "start" ]; then
+  echo "deleting .zeus.sock"
+  rm .zeus.sock
+fi
+
 title="${PWD##*/} us $1 $2 $3 $4 $5"
 echo -n -e "\033]0;$title\007"
 zeus  $1 $2 $3 $4 $5
